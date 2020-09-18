@@ -1,14 +1,20 @@
 {
   "name": "tencent-cloud-webpack",
   "version": "0.1.0",
-  "private": true,
+  "description": "tencent-cloud-webpack-plugin的示例",
+  "author": "liubrook",
+  "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vue-cli-service serve --open",
+    "build:prod": "vue-cli-service build",
+    "build:sit": "vue-cli-service build --mode staging",
+    "preview": "node build/index.js --preview",
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "lodash.isregexp": "^4.0.1",
+    "tencent-cloud-webpack-plugin": "^1.0.6",
     "vue": "^2.6.11"
   },
   "devDependencies": {
